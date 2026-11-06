@@ -4,3 +4,80 @@ GET {{Backend_HostAddress}}/weatherforecast/
 Accept: application/json
 
 ###
+
+# Pruebas del CRUD Brand (Casos de éxito, validaciones de FluentValidation y manejo de excepciones/retos)
+
+GET {{Backend_HostAddress}}/api/brand
+Accept: application/json
+
+###
+
+GET {{Backend_HostAddress}}/api/brand/1
+Accept: application/json
+
+###
+
+GET {{Backend_HostAddress}}/api/brand/1/beers
+Accept: application/json
+
+###
+
+POST {{Backend_HostAddress}}/api/brand
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "Cervecería del Valle"
+}
+
+###
+
+POST {{Backend_HostAddress}}/api/brand
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": ""
+}
+
+###
+
+POST {{Backend_HostAddress}}/api/brand
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "A"
+}
+
+###
+
+PUT {{Backend_HostAddress}}/api/brand/1
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id": 1,
+  "name": "Marca Actualizada"
+}
+
+###
+
+PUT {{Backend_HostAddress}}/api/brand/1
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id": 2,
+  "name": "Marca Invalida"
+}
+
+###
+
+DELETE {{Backend_HostAddress}}/api/brand/3
+Accept: application/json
+
+###
+
+DELETE {{Backend_HostAddress}}/api/brand/1
+Accept: application/json

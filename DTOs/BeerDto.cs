@@ -5,7 +5,7 @@ namespace Backend.DTOs;
 public class BeerDto
 {
     public int Id { get; set; }
-    public string Name { get; set; }
+    public string Name { get; set; } = string.Empty;
     public int BrandId { get; set; }
     public decimal Alcohol { get; set; }
 

@@ -9,5 +9,5 @@ public class Brand
     [Key]
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     public int BrandId { get; set; }
-    public string Name { get; set; }
+    public string Name { get; set; } = string.Empty;
 }
